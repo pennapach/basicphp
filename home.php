@@ -1,5 +1,6 @@
 <?php
-echo "hello PHP";
+echo "hello PHP<br>";
+echo "hello 2";
 if ($name == "admin") {
     echo "hello Admin";
 } else {
