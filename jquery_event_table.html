@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery table</title>
+    <style>
+        table, tr, th, td{
+            border:1px solid teal;
+            border-collapse: collapse;
+            padding:5px;
+                  }
+        table thead{
+            background-color:cornflowerblue;
+            color:#fff;
+
+                  }
+        .activecolor{
+            background-color: green;
+            color:honeydew;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+    <tr>
+        <th>ID</th>
+        <th>fullname</th>
+        <th>Email</th>
+    </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 1 </td>
+                <td> Samit Koyom </td>
+                <td> somitko@gmail.com </td>
+            </tr>
+            <tr>
+                    <td> 2 </td>
+                    <td> somchai titi </td>
+                    <td> somchai@gmail.com </td>
+                </tr>
+                <tr>
+                        <td> 3 </td>
+                        <td> dec titi </td>
+                        <td> dec@gmail.com </td>
+                    </tr>
+        </tbody>
+    </table>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script>
+    $(function(){
+        $('table tbody tr').hover(function(){
+            $('table tbody tr').removeClass('activecolor');
+            $(this).toggleClass('activecolor');
+                    })
+    });
+    </script>
+</body>
+</html>

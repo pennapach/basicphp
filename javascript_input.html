@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javascript_html"name="myform">
+        <label for="">Fullname </label>
+        <input type="text"name="fullname"onkeyup="showinput()">
+        <button type="button" onclick = "showinput()" > Submit </button>
+        <button type="button" onclick = "cleardata()" > clear </button>
+        <br>
+        <label for="">Result2</label>
+        <textarea id="displayname"cols="30"rows="10"></textarea>
+    </form>
+    <hr>
+        <div id="result">แสดงชื่อที่นี่</div>
+    
+    <script>
+    function showinput()
+    {
+        var fullname=document.myform.fullname.value;
+        document.getElementById("result").innerHTML=fullname;
+        document.getElementById("displayname").value=fullname;
+    }
+    
+    function cleardata()
+    {
+      document.myform.fullname.value="";
+      document.getElementById("result").innerHTML="";
+       document.getElementById("displayname").value="";
+       
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names = ["John","jane","Joe","joom"];
+        document.write(names+"<br>");
+        document.write(names[3]+"<br>");
+
+        //Loop
+        for(var i=0;i<=3;i++){
+            document.write(i+names[i]+"<br>");
+
+        }
+        //loop with foreach
+        names.forEach(function(entry) {
+            document.write(entry+"<br>") ;
+         });
+//object array
+var person={
+    "name":"John",
+    "age":30,
+    "car":[
+        {
+            "names":"ford",
+            "color":"blue"
+        },
+        {
+            "names":"toyota",
+            "color":"bronze"
+        }
+    ]
+
+}
+ 
+document.write(person.name);
+document.write(person.car[0].names);
+        </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onkeypress="wakeup()"id="btn">Wakup Now </button>
+    <script>
+        document.getElementById("btn").focus();
+        function wakeup(){
+            alert("Wakeup Now!!!");
+        }
+        function showinfo(name,age){
+            //alert("Hello  "+name+"<br>Your age is "+age);
+            return name+age; //ไม่ได้แสดงค่า
+        }
+        //wakeup();
+        var name = prompt("ป้อนชื่อ");
+        var age = prompt("อายุ");
+        showinfo(name,age);
+    </script>
+</body>
+</html>
